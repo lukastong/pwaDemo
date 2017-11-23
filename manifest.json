@@ -1,6 +1,6 @@
 {
-  "name": "Test",
-  "short_name": "zt",
+  "name": "ztPwaTest",
+  "short_name": "zt PWA",
   "display": "standalone",
   "start_url": "/",
   "theme_color": "#8888ff",
