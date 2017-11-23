@@ -1,0 +1,25 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Minimal PWA</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <script>
+    if (navigator.serviceWorker != null) {
+      navigator.serviceWorker.register('sw.js')
+      .then(function(registration) {
+        console.log('Registered events at scope: ', registration.scope);
+      });
+    }
+  </script>
+  <body>
+    <h3>Revision 1</h3>
+    <div class="main-text">Minimal PWA, open Console for more~~~</div>
+    <div id='root'>
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
